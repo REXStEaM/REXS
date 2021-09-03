@@ -33,8 +33,9 @@ if not database:get(Server.."UserSudo_Write") then
 print("\27[1;34mارسل ايدي المطور الان :\27[m")
 local Id = io.read():gsub(' ','') 
 if tostring(Id):match('%d+') then
+if res == 200 then
+Abs = json:decode(data)
 if Abs.Result.Info == 'Is_Spam' then
-io.write('\n\27[1;31mعذرا هذا الايدي محظور من السورس\n\27[0;39;49m')
 os.execute('lua REXS.lua')
 end ---ifBn
 if Abs.Result.Info == 'Ok' then
@@ -64,11 +65,13 @@ token = database:get(Server.."Token_Write"),
 SUDO = database:get(Server.."UserSudo_Write"),
 }
 Create(Config, "./Info.lua") 
-file = io.open("REXS", "w")  
-file:write([[
+
+print("::REXS::")
+local RunREXS = io.open("REXS", 'w')
+RunREXS:write([[
 #!/usr/bin/env bash
 cd $HOME/REXS
-token="]]..DevAbs:get(Server.."TokenREXS")..[["
+token="]]..database:get(Server.."Token_Write")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
