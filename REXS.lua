@@ -3892,17 +3892,17 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙عذرا الالعاب معطله في
 end
 ---- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل الالعاب المتطوره" and Manager(msg) then
-if database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
+if DevAbs:get(bot_id..'Abs:Games:Ids'..msg.chat_id_) then
 Text = '\n✯︙تم تفعيل امر الالعاب المتطوره'
-database:del(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_)  
+database:del(bot_id..'Abs:Games:Ids'..msg.chat_id_)  
 else
 Text = '\n✯︙بالتاكيد تم تفعيل امر الالعاب المتطوره'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == "تعطيل الالعاب المتطوره" and Manager(msg) then
-if not database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
-database:set(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_,true)  
+if not DevAbs:get(bot_id..'Abs:Games:Ids'..msg.chat_id_) then
+Dev_Abs(bot_id..'Abs:Games:Ids'..msg.chat_id_,true)  
 Text = '\n✯︙تم تعطيل امر الالعاب المتطوره'
 else
 Text = '\n✯︙بالتاكيد تم تعطيل امر الالعاب المتطوره'
@@ -3911,7 +3911,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 
 if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" then
-if not database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
+if not DevAbs:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
 Text =[[
 *᥀︙قائمه الالعاب المتطوره اضغط للعب*
 ]]
