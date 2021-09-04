@@ -3890,7 +3890,54 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,[[
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙عذرا الالعاب معطله في المجموعه', 1, 'md')
 end
+---- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == "تفعيل الالعاب المتطوره" and Manager(msg) then
+if database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
+Text = '\n✯︙تم تفعيل امر الالعاب المتطوره'
+database:del(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_)  
+else
+Text = '\n✯︙بالتاكيد تم تفعيل امر الالعاب المتطوره'
 end
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == "تعطيل الالعاب المتطوره" and Manager(msg) then
+if not database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
+database:set(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_,true)  
+Text = '\n✯︙تم تعطيل امر الالعاب المتطوره'
+else
+Text = '\n✯︙بالتاكيد تم تعطيل امر الالعاب المتطوره'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+
+if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" then
+if not database:get(bot_id..'Abs:Lock:Gamesinline'..msg.chat_id_) then
+Text =[[
+*᥀︙قائمه الالعاب المتطوره اضغط للعب*
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text="♟ الشطرنج ♟",url='https://t.me/T4TTTTBOT?game=chess'}},
+{{text="لعبة فلابي بيرد 🐥",url='https://t.me/awesomebot?game=FlappyBird'},{text="تحدي الرياضيات",url='https://t.me/gamebot?game=MathBattle'}},
+{{text="اكس او",url='t.me/xobot?start'},{text="سباق الدراجات 🏍",url='https://t.me/gamee?game=MotoFX'}},
+{{text="سباق سيارات 🏎",url='https://t.me/gamee?game=F1Racer'},{text="متشابه 👾",url='https://t.me/gamee?game=DiamondRows'}},
+{{text="كرة قدم ⚽",url='https://t.me/gamee?game=FootballStar'}},
+{{text="ورق🤹‍♂",url='https://t.me/gamee?game=Hexonix'},{text="Hexonix❌",url='https://t.me/gamee?game=Hexonix'}},
+{{text="MotoFx🏍️",url='https://t.me/gamee?game=MotoFx'}},
+{{text="لعبة 2048 🎰",url='https://t.me/awesomebot?game=g2048'},{text="Squares🏁",url='https://t.me/gamee?game=Squares'}},
+{{text="Atomic 1▶️",url='https://t.me/gamee?game=AtomicDrop1'},{text="Corsairs",url='https://t.me/gamebot?game=Corsairs'}},
+{{text="LumberJack",url='https://t.me/gamebot?game=LumberJack'}},
+{{text="LittlePlane",url='https://t.me/gamee?game=LittlePlane'},{text="RollerDisco",url='https://t.me/gamee?game=RollerDisco'}},
+{{text="🦖 لعبة التنين 🦖",url='https://t.me/T4TTTTBOT?game=dragon'},{text="🐍 لعبة الافعى 🐍",url='https://t.me/T4TTTTBOT?game=snake'}},
+{{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
+{{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
+{{text = 'WaTaN TeaM .', url="t.me/WaTaNTeaM"}},
+
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end end
 if text == 'بيع نقاطي' and ChCheck(msg) then
 if tonumber((DevAbs:get(REXS..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)) == 0 then
 Dev_Abs(msg.chat_id_, msg.id_, 1,'⌁︙لم تربح اي نقطه\n⌁︙ارسل ↫ الالعاب للعب', 1, 'md')
