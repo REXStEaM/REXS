@@ -927,7 +927,7 @@ end
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == '✯ /start ✯' or text == 'رجوع ✯' then  
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك اوامر البوت الخاصه بك\n✯︙اختر من الازار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك اوامر البوت الخاصه بك\n✯︙اختر من الازار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'✯ /start ✯'},
 {'قسم الاذاعه ✯','قسم الاحصائيات ✯'},
@@ -949,7 +949,7 @@ return false
 end end
 if text == 'قسم التعطيل والتفعيل ✯' then 
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم التعطيل والتفعيل\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم التعطيل والتفعيل\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'تعطيل التواصل ✯','تفعيل التواصل ✯'},
 {'تفعيل البوت الخدمي ✯','تعطيل البوت الخدمي ✯'},
@@ -961,7 +961,7 @@ return false
 end end
 if text == 'قسم ضع ~ اضف ~ حذف ✯' then 
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم ضع ~ اضف ~ حذف\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم ضع ~ اضف ~ حذف\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'ضع اسم للبوت ✯','ضع كليشه ستارت ✯','حذف كليشه ستارت ✯'},
 {'ردود المطور ✯'},
@@ -974,7 +974,7 @@ return false
 end end
 if text == 'قسم الاذاعه ✯' then 
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم االا ذاعه\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم االا ذاعه\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'اذاعه ✯','اذاعه بالتثبيت ✯'},
 {'اذاعه بالتوجيه ✯','اذاعه بالتوجيه خاص ✯'},
@@ -986,7 +986,7 @@ return false
 end end
 if text == 'قسم الاحصائيات ✯' then 
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم الاحصائيات\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم الاحصائيات\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'الاحصائيات ✯'},
 {'المشتركين ✯','الكروبات ✯'},
@@ -1000,7 +1000,7 @@ return false
 end end
 if text == 'قسم الاشتراك الاجباري ✯' then 
 if DevREXS(msg) then
-local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم الاشتراك الاجباري\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/QQOQQD)'
+local bl = '✯︙اهلا بك عزيزي المطور\n✯︙اليك قسم الاشتراك الاجباري\n✯︙اختر من الازرار في الاسفل\n✯︙قناة سورس البوت [اضغط هنا](t.me/REXStEaM)'
 local keyboard = {
 {'تفعيل الاشتراك الاجباري ✯','تعطيل الاشتراك الاجباري ✯'},
 {'الاشتراك الاجباري ✯','وضع قناة الاشتراك ✯'},
@@ -1011,10 +1011,10 @@ send_inline_key(msg.chat_id_,bl,keyboard)
 return false
 end end
 if text == '/start' then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 if not database:get(bot_id..'Start:Time'..msg.sender_user_id_) then
@@ -1111,10 +1111,10 @@ end,nil)
 end,nil)
 end 
 if text == 'تفعيل التواصل ✯' and DevREXS(msg) then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 if database:get(bot_id..'Tuasl:Bots') then
@@ -1126,10 +1126,10 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل التواصل ✯' and DevREXS(msg) then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 if not database:get(bot_id..'Tuasl:Bots') then
@@ -1141,10 +1141,10 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تفعيل البوت الخدمي ✯' and DevREXS(msg) then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 if database:get(bot_id..'Free:Bots') then
@@ -1156,10 +1156,10 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل البوت الخدمي ✯' and DevREXS(msg) then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 if not database:get(bot_id..'Free:Bots') then
@@ -1182,10 +1182,10 @@ database:del(bot_id..'Start:Bots')
 return false
 end
 if text == 'ضع كليشه ستارت ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:set(bot_id..'Start:Bots',true) 
@@ -1193,20 +1193,20 @@ send(msg.chat_id_, msg.id_,'✯︙ارسل لي الكليشه الان')
 return false
 end
 if text == 'حذف كليشه ستارت ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,'✯︙تم حذف كليشه ستارت')
 end
 if text == 'معلومات السيرفر ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 send(msg.chat_id_, msg.id_, io.popen([[
@@ -1224,10 +1224,10 @@ echo '*———————————~*\n✯✔{ مـده تـشغيـل ال
 ]]):read('*all'))  
 end
 if text == 'تحديث السورس ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 send(msg.chat_id_, msg.id_,'✯︙جارٍ الان تحديث السورس الى اخر اصدار')
@@ -1252,20 +1252,20 @@ send(msg.chat_id_, msg.id_,'✯︙اهلا بك عزيزي\n✯︙تم تنزي�
 dofile('REXS.lua')  
 end
 if text == "تـحــديـث ✯" then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 dofile("REXS.lua")  
 send(msg.chat_id_, msg.id_, "✯︙تم تحديث الملفات")
 end
 if text == "اضف رد للكل ✯" and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 send(msg.chat_id_, msg.id_,"✯︙ارسل الكلمه التي تريد اضافتها")
@@ -1273,10 +1273,10 @@ database:set(bot_id.."Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text == "حذف رد للكل ✯" and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 send(msg.chat_id_, msg.id_,"✯︙ارسل الكلمه التي تريد حذفها")
@@ -1445,20 +1445,20 @@ send(msg.chat_id_, msg.id_, '\n✯︙تم مسح قائمه المكتومين �
 return false
 end
 if text == 'الاصـدار ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,'✯︙اصدار سورس وطن \n✯︙الاصدار »{ v 2.7 }')
 end
 if text == "ضع اسم للبوت ✯" and DevREXS(msg) then  
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -1466,10 +1466,10 @@ send(msg.chat_id_, msg.id_," ✯︙ارسل اليه الاسم الان ")
 return false
 end
 if text == 'الاحصائيات ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -1479,10 +1479,10 @@ send(msg.chat_id_, msg.id_,Text)
 return false
 end
 if text == 'المشتركين ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -1492,10 +1492,10 @@ send(msg.chat_id_, msg.id_,Text)
 return false
 end
 if text == 'الكروبات ✯' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -1505,10 +1505,10 @@ send(msg.chat_id_, msg.id_,Text)
 return false
 end
 if text == ("المطورين ✯") and DevREXS(msg) then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local list = database:smembers(bot_id..'Sudo:User')
@@ -1527,10 +1527,10 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 if text == ("الثانويين ✯") and DevREXS(msg) then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local list = database:smembers(bot_id..'Dev:REXS:2')
@@ -1565,10 +1565,10 @@ return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ("المحظورين عام ✯") and DevREXS(msg) then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local list = database:smembers(bot_id..'GBan:User')
@@ -1588,10 +1588,10 @@ send(msg.chat_id_, msg.id_, t)
 return false
 end
 if text == ("قائمه الكتم العام ✯") and DevREXS(msg) then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local list = database:smembers(bot_id..'Gmute:User')
@@ -1611,10 +1611,10 @@ send(msg.chat_id_, msg.id_, t)
 return false
 end
 if text=="اذاعه خاص ✯" and msg.reply_to_message_id_ == 0 and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -1622,10 +1622,10 @@ send(msg.chat_id_, msg.id_," ✯︙ارسل الان اذاعتك؟ \n✯︙لل
 return false
 end 
 if text=="اذاعه ✯" and msg.reply_to_message_id_ == 0 and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -1633,10 +1633,10 @@ send(msg.chat_id_, msg.id_," ✯︙ارسل الان اذاعتك؟ \n✯︙لل
 return false
 end  
 if text=="اذاعه بالتثبيت ✯" and msg.reply_to_message_id_ == 0 and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -1644,10 +1644,10 @@ send(msg.chat_id_, msg.id_," ✯︙ارسل الان اذاعتك؟ \n✯︙لل
 return false
 end 
 if text=="اذاعه بالتوجيه ✯" and msg.reply_to_message_id_ == 0  and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -1655,10 +1655,10 @@ send(msg.chat_id_, msg.id_," ✯︙ارسل لي التوجيه الان")
 return false
 end 
 if text=="اذاعه بالتوجيه خاص ✯" and msg.reply_to_message_id_ == 0  and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -1669,10 +1669,10 @@ if text == 'جلب نسخه الاحتياطيه ✯' and DevREXS(msg) then
 GetFile_Bot(msg)
 end
 if text == "تنظيف المشتركين ✯" and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local pv = database:smembers(bot_id.."User_Bot")
@@ -1702,10 +1702,10 @@ end
 return false
 end
 if text == "تنظيف الكروبات ✯" and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 local group = database:smembers(bot_id..'Chek:Groups') 
@@ -2885,10 +2885,10 @@ database:set(bot_id..'Num:Add:Bot',Num)
 send(msg.chat_id_, msg.id_,'✯︙تم تعيين عدد الاعضاء سيتم تفعيل الكروبات التي اعضائها اكثر من  >> {'..Num..'} عضو')
 end
 if text == 'تحديث السورس' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 send(msg.chat_id_, msg.id_,'✯︙جارٍ الان تحديث السورس الى اخر اصدار')
@@ -2898,10 +2898,10 @@ send(msg.chat_id_, msg.id_,'✯︙تم تحديث السورس \n✯︙لديك 
 dofile('REXS.lua')  
 end
 if text == 'تحديث المتجر' and DevREXS(msg) then 
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 io.popen("mkdir File_Bot")
@@ -3190,10 +3190,10 @@ end,nil)
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ياسورس' then
-local url,res = https.request('https://nbgvy6.ml/REXStEaM/REXStEaM.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.REXStEaM.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Info_REXStEaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @QQOQQD')   
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @REXStEaM')   
 return false 
 end
 Text = "[⦑ Welcome to Source ⦒](t.me/REXStEaM)\n[✯ ⦑ SOURCE REXS ⦒](t.me/REXStEaM)\n✯ Source version : 2.7"
