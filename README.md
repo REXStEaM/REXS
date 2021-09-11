@@ -1,24 +1,28 @@
-# <p align="center" > تنصيب سورس ميلانو
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > ⤈ ↫ كود التنصيب الاول مع المكاتب ↬ ⤈
-# <p align="center" > `git clone https://github.com/MELANOTEM/MELANO.git;cd MELANO;chmod +x MELANO.sh;./MELANO.sh install`
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > ⤈ ↫ كود التنصيب السريع من دون مكاتب ↬ ⤈
-# <p align="center" > `git clone https://github.com/MELANOTEM/MELANO.git;cd MELANO;chmod +x MELANO.sh;./MELANO.sh`
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > قم بنسخ احدى اكواد التنصيب
-# <p align="center" > والصقه في الترمنال واضغط انتر
-# <p align="center" > انتظر الى ان ينتهي التنصيب
-# <p align="center" > ⤈ ↫ بعدها املأ المتطلبات ↬ ⤈
-# <p align="center" > ~ ايدي المطور • توكن البوت ~
-# <p align="center" > ومبروك عليك تنصيب السورس
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > ⤈ ↫ كود الرن ↬ ⤈
-# <p align="center" > `./MELANO/Run`
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > ⤈ ↫ كود حذف التنصيب ↬ ⤈
-# <p align="center" > `rm -rf MELANO`
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > ⤈ ↫ كود تغير ايدي المطور الاساسي وتوكن البوت ↬ ⤈
-# <p align="center" > `cd MELANO;rm -rf config.lua;./Run`
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
+# <p align="center" style="color:#cb3349" >سورس وطن على تلكرام ⌯︙
+
+# <p align="center" style="color:#cb3349" > [اصـــغـــط هــنـــا لــلــدخــول الــى الــقــنــاة](https://telegram.me/WaTaNTeaM) <br>
+
+# <p align="center"> كود تنصيب السورس ⌯︙
+
+ # <p align="center" style="color:#cb3349" > ``git clone https://github.com/WaTaNtEaM/WaTaN ;cd WaTaN;chmod +x install;./install``
+
+# <p align="center"> بعد انتهاء عمليه تثبيت السورس ⌯︙
+
+# <p align="center" style="color: #14635c;" >يطلب توكن البوت دخل توكن واضغط انتر ⌯︙
+
+ 
+
+# <p align="center" style="color:#cb3349" > وراها راح يطلب منك ايدي المطور الاساسي دخله واضغط انتر ⌯︙
+
+# <p align="center" style="color:#cb3349" > ⌯︙للمشاكل والاسفسار والاقتراحات :
+
+  
+
+# <p align="center" style="color:#cb3349" > [مــطــور ســورس](https://telegram.me/abbasfadhil) <br>
+ 
+ 
+
+
+  
+
+ 
