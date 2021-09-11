@@ -40,7 +40,7 @@ end
 else 
 io.write('\n\27[1;31mلم يتم حفظ التوكن\n\27[0;39;49m')
 end  
-os.execute('lua MELANO.lua') 
+os.execute('lua REXS.lua') 
 end
 local Create = function(data, file, uglify)  
 file = io.open(file, "w+")   
